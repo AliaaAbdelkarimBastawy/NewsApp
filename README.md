@@ -1,7 +1,5 @@
 # Flutter News App
 
-![Flutter Logo](https://flutter.dev/assets/images/shared/brand/flutter/logo/flutter-lockup.png)
-
 A Flutter News App that fetches data from the NEWS API. Users can browse general news or news based on specific categories [Sport, Health, Business, Techology, ..]
 
 Additionally, clicking on a news article allows users to view the full article on the original website using a WebView in Flutter.

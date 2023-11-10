@@ -1,17 +1,17 @@
-# news_app
+# Flutter News App
 
-A new Flutter project.
+![Flutter Logo](https://flutter.dev/assets/images/shared/brand/flutter/logo/flutter-lockup.png)
 
-## Getting Started
+A Flutter News App that fetches data from the NEWS API. Users can browse general news or news based on specific categories [Sport, Health, Business, Techology, ..]
 
-This project is a starting point for a Flutter application.
+Additionally, clicking on a news article allows users to view the full article on the original website using a WebView in Flutter.
 
-A few resources to get you started if this is your first Flutter project:
+## Features
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
-# NewsApp
+- **News API Integration:** Fetches news data from the [NEWS API].
+- **Category-based News:** Browse news based on specific categories such as Technology, Business, Sports, etc.
+- **WebView Integration:** Read the full news article by opening it in a WebView within the app.
+- **Dependencies Used:**
+  - `dio` package for network requests.
+  - `webview_flutter` package for WebView integration.
+  - `cached_network_image` package for efficiently loading and caching network images.

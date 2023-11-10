@@ -40,6 +40,8 @@ dependencies:
   cached_network_image: ^3.3.0
   webview_flutter: ^4.4.2
   path_provider: ^2.1.1
+  video_player: ^2.8.1
+  flutter_inappwebview: ^5.8.0
 
 
 dev_dependencies:

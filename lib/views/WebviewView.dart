@@ -37,7 +37,7 @@ class _WebviewViewState extends State<WebviewView> {
           Menu(controller: widget.controller, URL: widget.URL,),               // ADD
         ],
       ),
-      body: WebViewStack(controller: widget.controller),
+      body: WebViewStack(controller: widget.controller, URL: widget.URL),
     );
   }
 }

@@ -1,9 +1,11 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_inappwebview/flutter_inappwebview.dart';
 import 'package:webview_flutter/webview_flutter.dart';
 
 class WebViewStack extends StatefulWidget {
-  const WebViewStack({required this.controller, super.key});
+   WebViewStack({required this.controller, required this.URL, super.key});
 
+  String URL;
   final WebViewController controller;
 
   @override
@@ -68,9 +70,12 @@ class _WebViewStackState extends State<WebViewStack> {
   Widget build(BuildContext context) {
     return Stack(
       children: [
-        WebViewWidget(
-          controller: widget.controller,
+        InAppWebView(initialUrlRequest:
+        URLRequest(url: Uri.tryParse(widget.URL))
         ),
+        // WebViewWidget(
+        //   controller: widget.controller,
+        // ),
         if (loadingPercentage < 100)
           LinearProgressIndicator(
             value: loadingPercentage / 100.0,

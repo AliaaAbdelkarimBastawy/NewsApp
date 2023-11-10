@@ -11,5 +11,6 @@ Additionally, clicking on a news article allows users to view the full article o
 - **WebView Integration:** Read the full news article by opening it in a WebView within the app.
 - **Dependencies Used:**
   - `dio` package for network requests.
-  - `webview_flutter` package for WebView integration.
+  - `flutter_inappwebview` package for WebView integration.
   - `cached_network_image` package for efficiently loading and caching network images.
+  - 
